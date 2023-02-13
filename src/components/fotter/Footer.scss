@@ -1,0 +1,14 @@
+.Footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  // margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.container-footer {
+  display: block;
+  margin: 0 15%;
+}

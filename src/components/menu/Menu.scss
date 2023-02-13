@@ -1,0 +1,18 @@
+.Menu {
+  // display: block;
+
+  background-color: #fff;
+
+  &__pos {
+    // display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+
+    z-index: 5;
+  }
+}
+
+b {
+  flex-direction: row;
+}

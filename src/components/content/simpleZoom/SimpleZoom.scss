@@ -1,0 +1,47 @@
+.Links-partner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px !important;
+
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 1),
+    -23px 0 20px -23px rgba(0, 0, 0, .8),
+    23px 0 20px -23px rgba(0, 0, 0, .8),
+    0 0 40px rgba(0, 0, 0, .1) inset;
+
+  width: 320px;
+  height: 100px;
+
+  @media (max-width: 400px) {
+    width: 100px;
+    height: 100px;
+  }
+
+  &__Samurai {
+    background-image: url('../../../images/samurai.png');
+  }
+
+  &__micron {
+    background-image: url('../../../images/micron.png');
+  }
+
+  &__tradedesk {
+    background-image: url('../../../images/tradedesk.png');
+  }
+
+  &__genesisai {
+    background-image: url('../../../images/genesisai.png');
+  }
+  &__pymetrics {
+    background-image: url('../../../images/pymetrics.png');
+  }
+  &__iris {
+    background-image: url('../../../images/iris.png');
+  }
+  &__aibrain {
+    background-image: url('../../../images/aibrain.png');
+  }
+  &__trade24 {
+    background-image: url('../../../images/trade24.png');
+    background-size: 320px 100px;
+  }
+}

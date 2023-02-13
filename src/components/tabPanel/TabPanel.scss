@@ -1,0 +1,11 @@
+.DaskTop {
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+.PhoneTop {
+  @media (min-width: 901px) {
+    display: none;
+  }
+}
