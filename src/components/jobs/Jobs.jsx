@@ -38,10 +38,16 @@ export const Jobs = () => {
 };
 
 const SimpleAccordion = ({ vacancy, resp }) => {
+  const [expanded, setExpanded] = React.useState(false);
+
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
+
   return (
     <div>
       { vacancy.map((vac, index) => (
-        <Accordion key={ vac }>
+        <Accordion key={ vac } expanded={expanded === `${vac}`} onChange={handleChange(vac)}>
           <AccordionSummary
             expandIcon={ <ExpandMoreIcon /> }
             aria-controls="panel1a-content"
