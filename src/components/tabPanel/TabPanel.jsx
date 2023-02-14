@@ -9,6 +9,9 @@ import Button from '@mui/material/Button';
 import { PersistentDrawerRight } from '../drawer/index'
 import './TabPanel.scss'
 
+const Logo = require('../../images/logo.svg').default
+console.log(Logo);
+
 function TabPanel (props) {
   const { children, value, index, ...other } = props;
 
@@ -93,9 +96,10 @@ export const BasicTabs = () => {
               } }
             >
               <Tab
-                label="Logo" { ...a11yProps(0) }
+                label='' { ...a11yProps(0) }
                 sx={ { mr: 30, textUnderline: 'none' } }
-                href='/'
+                href='#'
+                className='Logo'
               />
               <Tab label="Our Services" { ...a11yProps(1) } onClick={ () => changer(1) } />
               <Tab label="Our Work" { ...a11yProps(2) } onClick={ () => changer(2) } />
